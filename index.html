@@ -1,13 +1,28 @@
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Шахи</title>
+  <title>Шахи для двох гравців</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Шахи</h1>
-  <div id="board"></div>
-  <div id="message"></div>
-  <script src="chess.js"></script>
+
+<div id="chessboard"></div>
+
+<div id="game-info">
+  <div id="turn-info">Хід: Білі (Зелені)</div>
+  <div id="status-info"></div>
+</div>
+
+<div id="chat">
+  <h3>Чат:</h3>
+  <div id="chat-messages"></div>
+  <input type="text" id="chat-input" placeholder="Введи повідомлення...">
+  <button onclick="sendMessage()">Надіслати</button>
+</div>
+
+<button id="copy-link" onclick="copyLink()">Скопіювати посилання на гру</button>
+
+<script src="chess.js"></script>
+
 </body>
 </html>
